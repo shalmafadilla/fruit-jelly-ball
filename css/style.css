@@ -121,22 +121,40 @@ body{
 }
 
 #price{
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 2% 7%;
+    padding: 0 7%;
     gap: 5%;
 }
 
 .price-tag{
-    display: inline-flex;
+    justify-content: center;
     align-items: center;
 }
+
+.price-tag img {
+    width: 20%;
+    animation: moveImage 7s ease-in-out infinite; /* Menambahkan animasi */
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(0); /* Mulai di posisi awal */
+    }
+    50% {
+        transform: translateX(1080px); /* Bergerak 20px ke kanan */
+    }
+    100% {
+        transform: translateX(0); /* Kembali ke posisi awal */
+    }
+}
+
 
 .container-menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+    gap: 4%;
 }
 
 .card-menu{
@@ -145,14 +163,42 @@ body{
     text-align: center;
     margin-top: 3%;
     width: 30%;
+    height: 300px;
+    background-color: none;
+    border-radius: 13px;
+    border: 2px solid var(--secondary);
+    padding: 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-menu2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+    width: 30%;
+    height: 300px;
     background-color: var(--primary);
     border-radius: 13px;
-    padding: 2% 5%;
+    padding: 5%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+:hover.card-menu, :hover.card-menu2{
+    box-shadow: 5px 10px 10px 1px #d5d5d5;
+    transform: translateY(-15px);
 }
 
 .card-menu h2{
     text-align: left;
     margin-bottom: 5px;
+}
+
+.price-end{
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    text-align: end;
 }
 
 /* media queries */
