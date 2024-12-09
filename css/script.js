@@ -8,3 +8,9 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+
+const navbarLi = document.querySelector('.navbar-li');
+
+menu.addEventListener('click', () => {
+    navbarLi.classList.toggle('active'); // Toggle class 'active'
+});
