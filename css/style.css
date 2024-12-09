@@ -1,7 +1,7 @@
 :root{
     --primary: #e3afd1;
     --secondary: #75004c;
-    --bg: linear-gradient(to bottom, #ffffff, #e3afd1);
+    --bg: #ffffff;
 }
 
 *{
@@ -15,7 +15,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #ffffff;
+    background: var(--bg);
     color: black;
 }
 
@@ -25,6 +25,10 @@ ul{
 
 li{
     margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
 }
 
 .navbar{
@@ -428,6 +432,7 @@ footer{
         padding: 5px 0;
         border-radius: 9px;
         font-size: 13px;
+        text-decoration: none;
     }
     
     .navbar-li {
