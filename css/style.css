@@ -401,7 +401,7 @@ footer{
             }
     
             50% {
-                transform: translateX(330px);
+                transform: translateX(310px);
                 /* Bergerak 20px ke kanan */
             }
     
