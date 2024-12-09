@@ -41,7 +41,8 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 14%;
+    padding: 5%;
     font-size: 18px;
     background-color: rgb(227, 175, 209, 0.8);
 }
