@@ -136,6 +136,15 @@ a{
     margin: 2% 0;
 }
 
+.about-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 5rem;
+    margin: 2% 0;
+}
+
 .about-item{
     display: flex;
     align-items: center;
