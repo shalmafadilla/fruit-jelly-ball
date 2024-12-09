@@ -1,7 +1,7 @@
 :root{
     --primary: #e3afd1;
     --secondary: #75004c;
-    --bg: linear-gradient(to bottom, #ffffff, #75004c);
+    --bg: linear-gradient(to bottom, #ffffff, #e3afd1);
 }
 
 *{
@@ -15,8 +15,16 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #fff;
+    background: #ffffff;
     color: black;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-bottom: 10px;
 }
 
 .navbar{
@@ -53,6 +61,7 @@ body{
 
 .navbar-li a:hover{
     color: var(--secondary);
+    
 }
 
 .navbar-order{
@@ -84,6 +93,18 @@ body{
 
 .main-text{
     width: 50%;
+}
+
+.main-text h1 {
+    font-size: 45px;
+}
+
+.main-text h3{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 3px 13px;
+    border-radius: 15px;
+    display: inline-block;
 }
 
 #about{
@@ -197,7 +218,7 @@ body{
     transform: translateY(-15px);
 }
 
-.card-menu h2{
+.card-menu h2, .card-menu2 h2{
     text-align: left;
     margin-bottom: 5px;
 }
@@ -272,10 +293,50 @@ body{
     width: 70%;
 }
 
+#profile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 7% 0 7%;
+    gap: 9%;
+}
+
+#profile h2{
+    margin-bottom: 20px;
+}
+
+.sub-profile {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.sub-profile2 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.sub-profile3 {
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+}
+
+.sub-profile p{
+    line-height: 33px;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    padding-top: 7%;
+}
+
 /* media queries */
 @media (max-width: 768px){
     html{
-        font-size: 62%;
+        font-size: 50%;
     }
     .about-item, .about-item2 {
         width: 100%;
@@ -288,4 +349,53 @@ body{
     .main-text {
         width: 100%;
     }
+
+    .sub-profile p {
+        line-height: 20px;
+    }
+    
+    .about-container p{
+        font-size: 1.5rem;
+    }
+
+    .container-rating{
+        margin: 20px 0;
+    }
+
+    .container-rating2 {
+        margin: 20px 0;
+    }
+
+    .container-rating3 {
+        margin: 20px 0;
+    }
+
+    .main-text p, h3{
+        font-size: 1.5rem;
+    }
+
+    .main-text h1{
+        font-size: 30px;
+    }
+
+    #hero-section img{
+        width: 300px;
+    }
+
+        @keyframes moveImage {
+            0% {
+                transform: translateX(0);
+                /* Mulai di posisi awal */
+            }
+    
+            50% {
+                transform: translateX(350px);
+                /* Bergerak 20px ke kanan */
+            }
+    
+            100% {
+                transform: translateX(0);
+                /* Kembali ke posisi awal */
+            }
+        }
 }
