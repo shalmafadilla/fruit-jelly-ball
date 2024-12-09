@@ -120,10 +120,10 @@ a{
 }
 
 #about{
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5% 7% 0 7%;
+    padding: 2% 7% 0 7%;
     gap: 7%;
 }
 
@@ -142,7 +142,7 @@ a{
     align-items: center;
     flex-wrap: wrap-reverse;
     gap: 5rem;
-    margin: 6% 0;
+    margin: 4% 0;
 }
 
 .about-item{
@@ -393,6 +393,24 @@ footer{
 
     #hero-section img{
         width: 300px;
+    }
+
+    .about-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin: 2% 0;
+    }
+    
+    .about-container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        gap: 2rem;
+        margin: 2rem 0;
     }
 
     .sub-profile{
