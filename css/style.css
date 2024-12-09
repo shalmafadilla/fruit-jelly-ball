@@ -182,7 +182,7 @@ a{
         transform: translateX(0); /* Mulai di posisi awal */
     }
     50% {
-        transform: translateX(1050px); /* Bergerak 1050px ke kanan */
+        transform: translateX(1000px); /* Bergerak 1000px ke kanan */
     }
     100% {
         transform: translateX(0); /* Kembali ke posisi awal */
