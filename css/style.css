@@ -213,11 +213,11 @@ a{
     text-align: center;
     margin-top: 3%;
     width: 30%;
-    height: 300px;
+    height: 480px;
     background-color: none;
     border-radius: 13px;
     border: 2px solid var(--secondary);
-    padding: 5%;
+    padding: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -227,10 +227,10 @@ a{
     text-align: center;
     margin-top: 3%;
     width: 30%;
-    height: 300px;
+    height: 480px;
     background-color: var(--primary);
     border-radius: 13px;
-    padding: 5%;
+    padding: 50px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -241,7 +241,7 @@ a{
 
 .card-menu h2, .card-menu2 h2{
     text-align: left;
-    margin-bottom: 5px;
+    margin-bottom: 50px;
 }
 
 .price-end{
@@ -484,5 +484,30 @@ footer{
         cursor: pointer;
         font-size: 30px;
         margin-top: 10px;
+    }
+
+    .card-menu, .card-menu2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        padding: 10px;
+        height: 220px;
+    }
+
+    .card-menu img, .card-menu2 img{
+        height: 70px;
+    }
+
+    .card-menu h2{
+        margin-bottom: 20px;
+    }
+
+    .card-menu2 h2 {
+        margin-bottom: 10px;
+    }
+
+    .price-tag{
+        margin-bottom: 20px;
     }
 }
