@@ -492,7 +492,7 @@ footer{
         text-align: center;
         margin: auto;
         padding: 10px 7px;
-        height: 220px;
+        height: max-content;
     }
 
     .card-menu img, .card-menu2 img{
